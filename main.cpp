@@ -1,9 +1,5 @@
 #include <iostream>
 using namespace std;
-
-
-
-
 class Node
 {
 public:
@@ -61,15 +57,14 @@ return counter;
 }
 
 };
-
 int main()
 {
 linkedList m;
-cout<<m.isEmpty()<<endl;
+cout<<m.isEmpty()<<endl; // return false (0) or true(1)
 cout<<"<><><><><><><><>"<<endl;
 m.insertFirst(5);
 m.insertFirst(4);
-cout<<m.isEmpty()<<endl;
+cout<<m.isEmpty()<<endl; // return false (0) or true(1)
 cout<<"<><><><><><><><>"<<endl;
 m.Display();
 cout<<m.counter()<<endl;
