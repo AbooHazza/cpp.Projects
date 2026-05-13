@@ -3,17 +3,18 @@ name: C++ Build
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-    - name: Compile project
+    - name: Compile files
       run: |
-        g++ src/main.cpp src/Stack.cpp src/Queue.cpp -o airline
+        g++ QueueWithLinkedList.cpp -o queue
+        g++ StackWithLinkedList.cpp -o stack
+        g++ Stack_Queue_Using_LinkedList.cpp -o stackqueue
+        g++ linkedlist.cpp -o linkedlist
+        g++ linkedlist2.cpp -o linkedlist2
