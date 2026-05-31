@@ -28,6 +28,11 @@ This repository contains a collection of C++ data structure implementations deve
 
 * Combined implementation demonstrating both stack and queue using linked list
 
+### 5. HW3.cpp
+
+*  A linked-list based queue implementation for managing university student records in C++.
+
+
 ## How to Run
 
 Compile any file using:
